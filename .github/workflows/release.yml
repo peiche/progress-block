@@ -1,0 +1,24 @@
+name: Generate Installable Plugin and Upload as Release Asset
+on:
+  release:
+    types: [published]
+jobs:
+  build:
+    name: Upload Release
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: bahmutov/npm-install@v1
+    - run: |
+        npm run build
+    - run: |
+        npm run plugin-zip
+    - uses: actions/upload-artifact@v2
+      with:
+        name: ankur
+        path: progress-block.zip
+    - uses: JasonEtco/upload-to-release@master
+      with:
+        args: progress-block.zip application/zip
+      env: 
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

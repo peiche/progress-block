@@ -1,0 +1,40 @@
+.wp-block-peiche-progress-block--sr-only {
+	position: absolute;
+	clip: rect(1px, 1px, 1px, 1px);
+	-webkit-clip-path: inset(50%);
+	clip-path: inset(50%);
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	padding: 0;
+	border: 0;
+	white-space: nowrap;
+}
+
+.wp-block-peiche-progress-block {
+
+	&--labels {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 0.5em;
+	}
+
+	&--bg {
+		position: relative;
+		width: 100%;
+		overflow: hidden;
+	}
+
+	&--rounded {
+		border-radius: 9999px;
+	}
+
+	&--fill {
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 0%;
+		background-color: currentcolor;
+	}
+}

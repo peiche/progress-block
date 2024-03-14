@@ -1,0 +1,36 @@
+{
+	"name": "progress-block",
+	"version": "1.0.0",
+	"description": "Display a progress bar with the WordPress block editor.",
+	"author": "Paul Eiche <peiche@gmail.com>",
+	"license": "GPL-2.0-or-later",
+	"main": "build/index.js",
+	"scripts": {
+		"build": "wp-scripts build",
+		"format": "wp-scripts format",
+		"lint": "npm run lint:css && npm run lint:js",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"lint:js:fix": "wp-scripts lint-js --fix",
+		"packages-update": "wp-scripts packages-update",
+		"plugin-zip": "wp-scripts plugin-zip",
+		"start": "wp-scripts start",
+		"env": "wp-env start"
+	},
+	"devDependencies": {
+		"@wordpress/env": "^8.12.0",
+		"@wordpress/scripts": "^26.17.0"
+	},
+	"files": [
+		"build",
+		"src",
+		"LICENSE.txt",
+		"nucleo-copyright-notice.txt",
+		"progress-block.php",
+		"readme.txt"
+	],
+	"dependencies": {
+		"@wordpress/data": "^9.23.0",
+		"react": "^18.2.0"
+	}
+}

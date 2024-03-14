@@ -1,0 +1,67 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "peiche/progress-block",
+	"version": "0.1.0",
+	"title": "Progress Block",
+	"category": "widgets",
+	"description": "Display a progress bar with the WordPress block editor.",
+	"example": {
+		"attributes": {
+			"title": "Progress",
+			"percentage": 50,
+			"percentageBackground": "#aaa",
+			"percentageFill": "#666",
+			"height": 15,
+			"showLabels": true
+		}
+	},
+	"keywords": [ "progress"],
+	"attributes": {
+		"title": {
+			"type": "string"
+		},
+		"percentage": {
+			"type": "integer"
+		},
+		"height": {
+			"type": "integer"
+		},
+		"rounded": {
+			"type": "boolean"
+		},
+		"showLabels": {
+			"type": "boolean"
+		},
+		"bgColor": {
+			"type": "string"
+		},
+		"customBgColor": {
+			"type": "string"
+		},
+		"fillColor": {
+			"type": "string"
+		},
+		"customFillColor": {
+			"type": "string"
+		}
+	},
+	"supports": {
+		"align": true,
+		"html": false,
+		"spacing": {
+			"margin": true,
+			"padding": true
+		},
+		"typography": {
+			"fontSize": true
+		},
+		"color": {
+			"text": true
+		}
+	},
+	"textdomain": "peiche/progress-block",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}
