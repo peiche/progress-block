@@ -28,7 +28,7 @@ With this **Progress Block**, you can easily show your audience your progress! U
 
 == Installation ==
 
-1. Download the latest version from `https://github.com/peiche/ankur/releases`.
+1. Download the latest version from `https://github.com/peiche/progress-block/releases`.
 2. In your WordPress Dashboard, navigate to Plugins > Add New Plugin.
 3. Click Upload Plugin. Choose the `progress-block.zip` file. Click Install Now.
 4. Activate the plugin.
