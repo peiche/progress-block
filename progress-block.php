@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       Progress Block
  * Description:       Display a progress bar with the WordPress block editor.
- * Version:           0.1.0
+ * Version:           1.0.0
  * Requires at least: 6.2
  * Requires PHP:      7.0
  * Author:            Paul Eiche
