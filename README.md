@@ -34,4 +34,4 @@ With this **Progress Block**, you can easily show your audience your progress! U
 
 ## Change log
 
-See the [change log](./CHANGELOG.MD).
+See the [change log](https://github.com/peiche/progress-block/blob/main/CHANGELOG.md).
