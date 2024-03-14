@@ -13,7 +13,7 @@ jobs:
         npm run build
     - run: |
         npm run plugin-zip
-    - uses: actions/upload-artifact@v2
+    - uses: actions/upload-artifact@v4
       with:
         name: progress-block
         path: progress-block.zip
