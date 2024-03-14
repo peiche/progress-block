@@ -24,6 +24,7 @@
 	"files": [
 		"build",
 		"src",
+		"CHANGELOG.md",
 		"LICENSE.txt",
 		"nucleo-copyright-notice.txt",
 		"progress-block.php",
