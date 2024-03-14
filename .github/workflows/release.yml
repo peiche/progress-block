@@ -15,7 +15,7 @@ jobs:
         npm run plugin-zip
     - uses: actions/upload-artifact@v2
       with:
-        name: ankur
+        name: progress-block
         path: progress-block.zip
     - uses: JasonEtco/upload-to-release@master
       with:
